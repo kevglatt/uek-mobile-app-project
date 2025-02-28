@@ -50,7 +50,7 @@ class PlanedSmsViewModel(
                 }
             }
 
-            is PlanedSmsEvent.EnablePlanedSms -> {
+            is PlanedSmsEvent.SetIsPlanedSmsEnabled -> {
                 _state.update {
                     it.copy(
                         isEnabled = true
