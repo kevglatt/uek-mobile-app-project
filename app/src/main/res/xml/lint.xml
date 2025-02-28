@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="LongMethod" severity="warning">
+        <option name="max" value="30" />
+    </issue>
+
+    <issue id="InvalidNaming" severity="error">
+        <option name="pattern" value="^[a-z][a-zA-Z0-9]*$" /> <!-- CamelCase für Methoden und Variablen -->
+        <option name="publicPattern" value="^[A-Z][a-zA-Z0-9]*$" /> <!-- PascalCase für public Properties in Java -->
+    </issue>
+
+    <issue id="LintEnabled" severity="fatal"/>
+</lint>
